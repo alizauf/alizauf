@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+<title>Twin Peaks Characters Co-Occurence</title>
 <style>
 
 .node {
@@ -13,8 +15,16 @@
   stroke-opacity: .6;
 }
 
+body {
+  font-family: sans-serif;
+}
 </style>
+</head>
 <body>
+<h1>Twin Peaks Character Co-Occurence</h1>
+<p>There are a lot of characters on Twin Peaks. Inspired by <a href="https://bl.ocks.org/mbostock/4062045" target="_blank">Mike Bostock's visualization</a> of character co-occurence in Les Miz, I wanted to do the same thing with Twin Peaks. Unfortunately, no such dataset existed. But there was this <a href="http://www.glastonberrygrove.net/texts/" target='_blank'>awesome sketchy fan site</a> with most of the scripts. So <a href="https://github.com/alizauf/twin-peaks/blob/master/script_scraping.ipynb" target="_blank">I wrote a Python script</a> to, er, script the scripts. I ended up with <a href="https://github.com/alizauf/twin-peaks/blob/master/twin_peaks_clean_locations_characters.json">this JSON document</a> of the scenes, which I was able to <a href="https://github.com/alizauf/twin-peaks/blob/master/twin_peaks_graph.json" target="_blank">massage into the right format</a> to turn it into a D3-ified graph</p>
+<p>This is just version 1. Much more to come! Initial things to tackle next include: Making the tooltips not horrible, letting you filter characters and their relationships, allowing you to remove minor characters for clarity. And then after that, much bigger plans for the dataset.</p>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
