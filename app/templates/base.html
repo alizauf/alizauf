@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aliza Aufrichtig</title>
+
+    <meta name="author" content="Aliza Aufrichtig" />
+    <meta name="description" content="Aliza Aufrichtig writes and makes projects on the internet." />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="/static/css/aliza.css" rel="stylesheet" type="text/css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16.png">  
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96.png">
+
+  </head>
+  <body>
+  <header>
+<h1><strong><a href="{{ url_for('index') }}">Aliza Aufrichtig</a></strong> is a <a href="{{ url_for('projects') }}">programmer</a>, <a href="{{ url_for('design') }}">UX designer</a> &amp; <a href="{{ url_for('writing') }}">writer</a>.</h1>
+  </header>
+      <div class="content">
+    {% block content %}{% endblock %}
+    </div>
+      
+
+  <footer>
+
+  <ul class="footer">
+  <li><strong>Get in touch:</strong> </li>
+  <li><a href="mailto:aliza.aufrichtig@gmail.com">aliza.aufrichtig@gmail.com</a></li>  
+  <li><a href="http://www.twitter.com/alizauf">@alizauf</a></li>
+  <li><a href="https://www.github.com/alizauf">github.com/alizauf</a></li>
+  </ul>
+ <p class="copyright"> Copyright 2016 Aliza Aufrichtig. Oh, and <a href="/static/pdfs/resume.pdf">here's my resume</a>.</p>
+  </footer>
+  </body> 
+  
+</html>

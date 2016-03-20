@@ -1,80 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Aliza Aufrichtig</title>
-
-    <meta name="author" content="Aliza Aufrichtig" />
-    <meta name="description" content="Aliza Aufrichtig writes and makes projects on the internet." />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    body {
-      font-family: Courier;
-      /*background-color: blue;*/
-      margin: 40px;
-      padding: 10px;
-    }
-
-    .alizaImage {
-      margin: 0px;
-     
-      order: 1;     
-    }
-
-    img {
-      max-width: 100%;
-      margin-bottom: 0px;
-    }
-
-    .photoCredit {
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    .quotebox {
-      
-      margin-left: 20px;
-      width: 400px;
-
-      order: 2;
-    }
-
-    .quotes {
-      margin-left: 5px;
-    }
-
-    header {
-      margin-bottom: 30px;
-    }
-    a {
-      color: #000;
-      border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ccc;
-    text-decoration: none;
-    }
-    a:hover{ 
-      color: #000;
-      border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #000; 
-    }
-
-    a:visited {
-      color: #000;
-    } 
-
-.top {
-  display: flex;
-  flex-direction: row
-}
-
-    </style>
-  </head>
-  <body>
-  <header>
-<p><strong>Aliza Aufrichtig</strong> is a <a href="">programmer</a>, <a href="">UX designer</a> &amp; <a href="">writer</a>.</p>
-  </header>
+{% extends "base.html" %} {% block content %}
       
     
       
@@ -88,11 +12,11 @@
       </div>
 
       <div class="quotebox">
-        <p> She's also been called: </p>
+        <p> <strong>She's also been called:</strong> </p>
         <div class="quotes">
-        <p>"<em>a frustrated writer and poster enthusiast</em>" &mdash;<a href="http://gizmodo.com/someone-redesigned-the-usps-package-delivery-slip-than-1749292008">Gizmodo</a></p>
-        <p>"<em>a 20-something education enthusiast who's slowly furnishing her apartment with anything but the inexpensive particle board wares</em>" &mdash;<a href="http://ny.curbed.com/2015/4/6/9973384/graduating-to-an-ikea-free-adult-apartment-in-brooklyn">Curbed</a></p>
-        <p> "<em>a freeloader</em>" &mdash;<a href="http://nymag.com/thecut/2015/10/friendship-bracelets-make-debt-fun-and-romantic.html">New York Magazine</a></p>
+        <p>"<em>a frustrated writer and poster enthusiast</em>" &mdash; <a href="http://gizmodo.com/someone-redesigned-the-usps-package-delivery-slip-than-1749292008">Gizmodo</a></p>
+        <p>"<em>a 20-something education enthusiast who's slowly furnishing her apartment with anything but the inexpensive particle board wares</em>" &mdash; <a href="http://ny.curbed.com/2015/4/6/9973384/graduating-to-an-ikea-free-adult-apartment-in-brooklyn">Curbed</a></p>
+        <p> "<em>a freeloader</em>" &mdash; <a href="http://nymag.com/thecut/2015/10/friendship-bracelets-make-debt-fun-and-romantic.html">New York Magazine</a></p>
        </div>
       </div>
       </div>
@@ -115,9 +39,4 @@
       </ul>
       <p>I've been keeping <a href="http://alizauf.github.io/" target="_blank">a (mostly) daily log</a> of stuff I've been working on.</p>
       <p>And <a href="http://aliza.aufri.ch/tig" target="_blank">here is some past writing</a>.</p>-->
-  <footer>
-  <p>Copyright 2016 Aliza Aufrichtig</p>
-  </footer>
-  </body> 
-  
-</html>
+  {% endblock %}
