@@ -24,6 +24,17 @@
 
 </script>
 
+<script>
+
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+
+
   </head>
   <body>
   <header>
@@ -39,10 +50,10 @@
   <ul class="footer">
   <li><strong>Get in touch:</strong> </li>
   <li><a href="mailto:aliza.aufrichtig@gmail.com">aliza.aufrichtig@gmail.com</a></li>  
-  <li><a href="http://www.twitter.com/alizauf">@alizauf</a></li>
-  <li><a href="https://www.github.com/alizauf">github.com/alizauf</a></li>
+  <li><a href="http://www.twitter.com/alizauf" onclick="trackOutboundLink('http://www.twitter.com/alizauf'); return false;">@alizauf</a></li>
+  <li><a href="https://www.github.com/alizauf" onclick="trackOutboundLink('http://www.github.com/alizauf'); return false;">github.com/alizauf</a></li>
   </ul>
- <p class="copyright"> Copyright 2016 Aliza Aufrichtig. Oh, and <a href="/static/pdfs/resume.pdf">here's my resume</a>.</p>
+ <p class="copyright"> Copyright 2016 Aliza Aufrichtig. Oh, and <a href="/static/pdfs/resume.pdf" onclick="trackOutboundLink('/static/pdfs/resume.pdf'); return false;">here's my resume</a>.</p>
   </footer>
   </body> 
   
